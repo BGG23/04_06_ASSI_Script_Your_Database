@@ -1,8 +1,6 @@
 # 04_06_ASSI_Script_Your_Database
 #### Belén Gamero García y Edgar López Hernández
 
-Si es posible, mencione las diferentes fuentes de información que ha utilizado para preparar su trabajo.
-
 ## Diagrama relacional
 ![Diagrama relacional drawio](https://user-images.githubusercontent.com/91567318/213511460-08a0d8f9-151e-412f-8b9b-2aa9e788e218.png)
 
