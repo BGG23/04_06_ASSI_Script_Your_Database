@@ -2,7 +2,7 @@
 #### Belén Gamero García y Edgar López Hernández
 
 ## Diagrama relacional
-![Diagrama relacional drawio](https://user-images.githubusercontent.com/91567318/213511460-08a0d8f9-151e-412f-8b9b-2aa9e788e218.png)
+![Diagrama relacional drawio](https://user-images.githubusercontent.com/91567318/214814492-e9ea4301-01fc-448f-a9e4-4b6659d829d7.png)
 
 Cree el script requerido para generar la base de datos correspondiente a su diagrama relacional.
 Si es posible, utilice las siguientes palabras clave.
