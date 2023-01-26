@@ -21,15 +21,16 @@ CREATE TABLE  reserva (
 	telefono INTEGER NOT NULL, 
 	destino VARCHAR(30) NOT NULL,
 	extras bicicleta VARCHAR(20), 
-	importe INTEGER NOT NULL, 
-	fecha inicio DATATIME NOT NULL,
-	fecha final DATATIME NOT NULL, 
+	importe INTEGER, 
+	fecha inicio DATA NOT NULL,
+	fecha final DATA NOT NULL, 
 	total + extra VARCHAR(20) NOT NULL,
 		PRIMARY KEY (id_reserva),
 		FOREIGN KEY (id_bicicleta) REFERENCES Bicicletas (id_bicicleta));
 
 CREATE TABLE extra (
 	id_extra INTEGER AUTO_INCREMENT,
+	nombre VARCHAR(20) NOT NULL,
 	descripcion VARCHAR(20) NOT NULL,
 		PRIMARY KEY(id_extra));
 
