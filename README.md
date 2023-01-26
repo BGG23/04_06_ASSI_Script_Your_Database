@@ -9,7 +9,8 @@ El nombre del script DDL será ddl.sql ✅
 Cree un script para insertar algunos datos de ejemplo en su base de datos. El nombre del script DML será dml.sql ✅
 
 Incluya algunas consultas de ejemplo sobre sus datos. El nombre del script de consultas será consultas.
-sql
+sql.
+
 Incluya un script que elimine todos los datos. Debería llamarse delete.sql
 
 Incluya un script que suelte todas las tablas. Debería llamarse drop.sql
