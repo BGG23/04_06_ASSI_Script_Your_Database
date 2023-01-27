@@ -6,7 +6,9 @@
 
 The name for the DDL script will be ddl.sql.
 
-![image](https://user-images.githubusercontent.com/91567318/215176071-82f6e3b0-20b3-4ff2-aa76-fbe1e2afbdde.png)
+(![image](https://user-images.githubusercontent.com/91567318/215187935-08359bb0-ff13-4b71-849b-f3f1b73604b1.png))
+
+![image](https://user-images.githubusercontent.com/91567318/215187600-0439fcc9-6278-4650-9b21-bdb0952134ef.png)
 
 Create a script to insert some example data into your database. The name of the DML script will be dml.sql.
 
