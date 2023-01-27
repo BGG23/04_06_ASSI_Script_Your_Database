@@ -17,28 +17,55 @@
 ![image](https://user-images.githubusercontent.com/91567318/215195924-2b6cfe90-4b99-4db5-b0d7-bcaf684a1bfc.png)
 
 
-## Delete.sql
-```
+## Queries.sql
 
-SELECT * FROM bicicleta WHERE Marca = "Spezialited";
+``` SELECT * FROM bicicleta WHERE Marca = "Spezialited"; ```
 
 ![1](https://user-images.githubusercontent.com/91567318/215198878-a9463262-1a22-4c48-9929-4a39f6cc9973.PNG)
 
-SELECT * FROM reserva WHERE importe <= 50;
+``` SELECT * FROM reserva WHERE importe <= 50; ```
 
 ![2](https://user-images.githubusercontent.com/91567318/215198972-d5ce7a80-4f8e-4436-89a5-2ac3e75f1f02.PNG)
 
-SELECT * FROM bicicleta WHERE extras_bicicleta = 1;
+``` SELECT * FROM bicicleta WHERE extras_bicicleta = 1; ```
 
 ![3](https://user-images.githubusercontent.com/91567318/215199093-32a79ee2-aa75-4a3e-b8eb-d1ca2cdd7956.PNG)
 
-SELECT * FROM bicicleta b INNER 
-  JOIN bici_extra be ON b.Id_bicicleta = be.Id_bicicleta 
-      INNER JOIN extra e ON e.Id_extra = be.Id_extra;
+``` SELECT * FROM bicicleta b INNER JOIN bici_extra be ON b.Id_bicicleta = be.Id_bicicleta INNER JOIN extra e ON e.Id_extra = be.Id_extra; ```
       
 ![4](https://user-images.githubusercontent.com/91567318/215199188-744bc058-a516-4d9f-b2d0-2bcf2d95a541.PNG)
-      
-```
+
 ## Delete.sql
 
+``` DELETE FROM bicicleta; ``` 
+
+![image](https://user-images.githubusercontent.com/91567318/215203729-f6bf5994-97aa-4eb9-b0c2-a55ff5bbf1c5.png)
+
+``` DELETE FROM extra; ``` 
+
+![image](https://user-images.githubusercontent.com/91567318/215203940-2c2e9222-4b35-4585-b2aa-dd1c76fa8b84.png)
+
+``` DELETE FROM bici_extra; ``` 
+
+![image](https://user-images.githubusercontent.com/91567318/215204097-383cb7e8-cdda-4ef2-9a86-cfb5cf442db7.png)
+
+``` DELETE FROM reserva; ``` 
+
+![image](https://user-images.githubusercontent.com/91567318/215204229-ddbb4503-ee08-4fcf-a72c-565bc70ce2ba.png)
+
+
 ## Drop.sql
+
+``` ALTER TABLE reserva DROP FOREIGN KEY reserva_ibfk_1; ``` 
+
+``` ALTER TABLE bici_extra DROP FOREIGN KEY bici_extra_ibfk_1, DROP FOREIGN KEY bici_extra_ibfk_2; ``` 
+
+``` DROP TABLE bicicleta; ``` 
+
+``` DROP TABLE reserva; ``` 
+
+``` DROP TABLE extra; ``` 
+
+``` DROP TABLE bici_extra; ``` 
+
+"""
