@@ -1,12 +1,16 @@
 # 04_06_ASSI_Script_Your_Database
 #### Belén Gamero García y Edgar López Hernández
 
-## Diagrama relacional
+## Relational Diagram
 ![Diagrama relacional drawio](https://user-images.githubusercontent.com/91567318/214814492-e9ea4301-01fc-448f-a9e4-4b6659d829d7.png)
 
-El nombre del script DDL será ddl.sql ✅
+The name for the DDL script will be ddl.sql.
 
-Cree un script para insertar algunos datos de ejemplo en su base de datos. El nombre del script DML será dml.sql ✅
+![image](https://user-images.githubusercontent.com/91567318/215176071-82f6e3b0-20b3-4ff2-aa76-fbe1e2afbdde.png)
+
+Create a script to insert some example data into your database. The name of the DML script will be dml.sql.
+
+![image](https://user-images.githubusercontent.com/91567318/215176785-2fbda927-36a2-401f-9190-d824353754ed.png)
 
 Incluya algunas consultas de ejemplo sobre sus datos. El nombre del script de consultas será consultas.
 sql.
