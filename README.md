@@ -14,6 +14,8 @@ Create a script to insert some example data into your database. The name of the 
 
 ![image](https://user-images.githubusercontent.com/91567318/215176785-2fbda927-36a2-401f-9190-d824353754ed.png)
 
+![image](https://user-images.githubusercontent.com/91567318/215195924-2b6cfe90-4b99-4db5-b0d7-bcaf684a1bfc.png)
+
 Incluya algunas consultas de ejemplo sobre sus datos. El nombre del script de consultas será consultas.
 sql.
 
