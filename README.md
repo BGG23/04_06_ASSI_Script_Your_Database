@@ -6,13 +6,9 @@
 
 ## DDL.sql
 
-(![image](https://user-images.githubusercontent.com/91567318/215187935-08359bb0-ff13-4b71-849b-f3f1b73604b1.png))
-
 ![image](https://user-images.githubusercontent.com/91567318/215187600-0439fcc9-6278-4650-9b21-bdb0952134ef.png)
 
 ## DML.sql
-
-![image](https://user-images.githubusercontent.com/91567318/215176785-2fbda927-36a2-401f-9190-d824353754ed.png)
 
 ![image](https://user-images.githubusercontent.com/91567318/215195924-2b6cfe90-4b99-4db5-b0d7-bcaf684a1bfc.png)
 
