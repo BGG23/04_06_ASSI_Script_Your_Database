@@ -1,50 +1,43 @@
-create database if not exists bicicletas;
+CREATE DATABASE IF NOT EXISTS bicicletas;
 
-use bicicletas
+USE bicicletas;
 
-create table if not exists bicicleta(
-    Id_bicicleta INT NOT NULL AUTO_INCREMENT, 
-    Tipo VARCHAR(20) NOT NULL, 
-    Talla VARCHAR(20) NOT NULL, 
-    Color VARCHAR(20) NOT NULL, 
-    Material VARCHAR(20) NOT NULL, 
-    Marca VARCHAR(20) NOT NULL,
-    Reservada BOOLEAN NOT NULL,
+CREATE TABLE IF NOT EXISTS bicicleta (
+    id_bicicleta INT NOT NULL AUTO_INCREMENT, 
+    tipo VARCHAR(20) NOT NULL, 
+    talla VARCHAR(20) NOT NULL, 
+    color VARCHAR(20) NOT NULL, 
+    material VARCHAR(20) NOT NULL, 
+    marca VARCHAR(20) NOT NULL,
+    reservada BOOLEAN NOT NULL,
     extras_bicicleta VARCHAR(20), 
-    PRIMARY KEY (Id_bicicleta)
-);
+    	PRIMARY KEY (id_bicicleta));
 
-create table if not exists reserva(
-    Id_reserva INT NOT NULL AUTO_INCREMENT,
-    Id_bicicleta INT NOT NULL,
-    nombre VARCHAR(20) NOT NULL, 
-    apellido VARCHAR(20) NOT NULL, 
-    dni VARCHAR(10) NOT NULL, 
-    teléfono INT NOT NULL, 
-    destino VARCHAR(30) NOT NULL,
-    importe INT NOT NULL, 
-    fecha_inicio datetime NOT NULL,
-    fecha_final datetime NOT NULL, 
-    total_y_extra VARCHAR(20) NOT NULL,
-    
-    PRIMARY KEY (Id_reserva),
-    FOREIGN KEY (Id_bicicleta) REFERENCES bicicleta(Id_bicicleta)
-);
+CREATE TABLE IF NOT EXISTS reserva (
+	id_reserva INT NOT NULL AUTO_INCREMENT,
+	id_bicicleta INT NOT NULL,
+	nombre VARCHAR(20) NOT NULL, 
+	apellido VARCHAR(20) NOT NULL, 
+	dni VARCHAR(10) NOT NULL, 
+	teléfono INT NOT NULL, 
+	destino VARCHAR(30) NOT NULL,
+	extras_bicicleta VARCHAR(200),
+	importe INT, 
+	fecha_inicio date NOT NULL,
+	fecha_final date NOT NULL, 
+	total_y_extra VARCHAR(20) NOT NULL,
+		PRIMARY KEY (id_reserva),
+		FOREIGN KEY (id_bicicleta) REFERENCES bicicleta (id_bicicleta));
 
-create table if not exists extra(
-	Id_extra INT AUTO_INCREMENT NOT NULL,
-	descripción VARCHAR(20) NOT NULL,
-		
-    PRIMARY KEY(Id_extra)
-);
+CREATE TABLE IF NOT EXISTS extra (
+	id_extra INT AUTO_INCREMENT NOT NULL,
+	nombre VARCHAR(200) NOT NULL,
+	descripción VARCHAR(200) NOT NULL,
+		PRIMARY KEY (id_extra));
 
-create table if not exists bici_extra(
-    
-    Id_bicicleta INT NOT NULL,
-	Id_extra INT NOT NULL,
-	
-    PRIMARY KEY(Id_bicicleta, Id_extra),		
-    FOREIGN KEY (Id_bicicleta) REFERENCES bicicleta(Id_bicicleta),
-    FOREIGN KEY (Id_extra) REFERENCES extra(Id_extra)
-
-);
+CREATE TABLE IF NOT EXISTS bici_extra (
+	id_bicicleta INT NOT NULL,
+	id_extra INT NOT NULL,
+		PRIMARY KEY (id_bicicleta, id_extra),
+		FOREIGN KEY (id_bicicleta) REFERENCES bicicleta (id_bicicleta),
+		FOREIGN KEY (id_extra) REFERENCES extra (id_extra));
