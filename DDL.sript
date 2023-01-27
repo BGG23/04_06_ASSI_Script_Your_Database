@@ -2,7 +2,7 @@ CREATE DATABASE transporte IF NOT EXISTS;
 
 USE transporte;
 
-CREATE TABLE bicicletas (
+CREATE TABLE bicicleta (
 	id_bicicleta  INTEGER AUTO_INCREMENT, 
 	tipo VARCHAR(20) NOT NULL, 
 	talla VARCHAR(20) NOT NULL, 
@@ -20,13 +20,13 @@ CREATE TABLE  reserva (
 	dni VARCHAR(10) NOT NULL, 
 	telefono INTEGER NOT NULL, 
 	destino VARCHAR(30) NOT NULL,
-	extras bicicleta VARCHAR(20), 
+	extras_bicicleta VARCHAR(20), 
 	importe INTEGER, 
-	fecha inicio DATA NOT NULL,
-	fecha final DATA NOT NULL, 
-	total + extra VARCHAR(20) NOT NULL,
+	fecha_inicio DATA NOT NULL,
+	fecha_final DATA NOT NULL, 
+	total_+_extra VARCHAR(20) NOT NULL,
 		PRIMARY KEY (id_reserva),
-		FOREIGN KEY (id_bicicleta) REFERENCES Bicicletas (id_bicicleta));
+		FOREIGN KEY (id_bicicleta) REFERENCES bicicleta (id_bicicleta));
 
 CREATE TABLE extra (
 	id_extra INTEGER AUTO_INCREMENT,
