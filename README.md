@@ -53,23 +53,4 @@
 
 ![image](https://user-images.githubusercontent.com/91567318/215204229-ddbb4503-ee08-4fcf-a72c-565bc70ce2ba.png)
 
-
-## Drop.sql
-
-``` ALTER TABLE reserva DROP FOREIGN KEY reserva_ibfk_1; ``` 
-
-![image](https://user-images.githubusercontent.com/91567318/215206244-49dede9f-f912-4f56-8e93-bd7136f4d7a6.png)
-
-``` ALTER TABLE bici_extra DROP FOREIGN KEY bici_extra_ibfk_1, DROP FOREIGN KEY bici_extra_ibfk_2; ``` 
-
-![image](https://user-images.githubusercontent.com/91567318/215206295-75cef4f2-bca5-4d6c-b269-71caff43ae67.png)
-
-``` DROP TABLE bicicleta; ``` 
-
-``` DROP TABLE reserva; ``` 
-
-``` DROP TABLE extra; ``` 
-
-``` DROP TABLE bici_extra; ``` 
-
-"""
+'''
