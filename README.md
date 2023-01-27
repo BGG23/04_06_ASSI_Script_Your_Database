@@ -19,6 +19,27 @@ Create a script to insert some example data into your database. The name of the 
 Incluya algunas consultas de ejemplo sobre sus datos. El nombre del script de consultas será consultas.
 sql.
 
+'''
+
+SELECT * FROM bicicleta WHERE Marca = "Spezialited";
+
+![1](https://user-images.githubusercontent.com/91567318/215198878-a9463262-1a22-4c48-9929-4a39f6cc9973.PNG)
+
+SELECT * FROM reserva WHERE importe <= 50;
+
+![2](https://user-images.githubusercontent.com/91567318/215198972-d5ce7a80-4f8e-4436-89a5-2ac3e75f1f02.PNG)
+
+SELECT * FROM bicicleta WHERE extras_bicicleta = 1;
+
+![3](https://user-images.githubusercontent.com/91567318/215199093-32a79ee2-aa75-4a3e-b8eb-d1ca2cdd7956.PNG)
+
+SELECT * FROM bicicleta b INNER 
+  JOIN bici_extra be ON b.Id_bicicleta = be.Id_bicicleta 
+      INNER JOIN extra e ON e.Id_extra = be.Id_extra;
+      
+![4](https://user-images.githubusercontent.com/91567318/215199188-744bc058-a516-4d9f-b2d0-2bcf2d95a541.PNG)
+      
+'''
 Incluya un script que elimine todos los datos. Debería llamarse delete.sql
 
 Incluya un script que suelte todas las tablas. Debería llamarse drop.sql
