@@ -21,7 +21,6 @@ CREATE TABLE IF NOT EXISTS reserva (
 	dni VARCHAR(10) NOT NULL, 
 	teléfono INT NOT NULL, 
 	destino VARCHAR(30) NOT NULL,
-	extras_bicicleta VARCHAR(200),
 	importe INT, 
 	fecha_inicio date NOT NULL,
 	fecha_final date NOT NULL, 
